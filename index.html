@@ -1,6 +1,93 @@
-Note to parallel folks: there should be something here but no "index.html" or "index.md" file is provided so this dummy landing is given instead.
-Just fill a proper "index.md" or "index.html" and there'll be a proper landing page.
+<!doctype html>
 
-<br><br>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <script defer data-domain="juliaparallel.org" src="https://plausible.io/js/plausible.js"></script>
+  <link rel="stylesheet" href="/juliaparallel-xr/css/franklin.css">
+<link rel="stylesheet" href="/juliaparallel-xr/css/minimal-mistakes.css">
+<link rel="stylesheet" href="/juliaparallel-xr/css/adjust.css">
+<link rel="icon" href="/juliaparallel-xr/assets/favicon.png">
 
-Here's a link to a working page: <a href="/juliaparallel-xr/teaching/">Teaching</a>
+
+   <title>"News"</title>  
+  
+  
+</head>
+<body class="layout--single">
+  <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <img class="jp-logo" src="/juliaparallel-xr/assets/logo.png"/>
+        <a class="site-title" href="/juliaparallel-xr/">JuliaParallel</a>
+        <ul class="visible-links">
+          <li class="masthead__menu-item"><a href="/juliaparallel-xr/news/">News</a></li>
+          <li class="masthead__menu-item"><a href="/juliaparallel-xr/teaching/">Teaching</a></li>
+          <li class="masthead__menu-item"><a href="/juliaparallel-xr/tutorials/">Tutorials</a></li>
+          <li class="masthead__menu-item"><a href="https://github.com/JuliaParallel">Github</a></li>
+        </ul>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="initial-content">
+    <div id="main" role="main">
+
+
+
+<div class="franklin-content" >
+  <style>
+   @media (min-width: 1024px) {
+     .franklin-content {
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+     }
+   }
+</style><div class="news-container"><div class="news-block" style="width:257px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/05/dagger_julius_benchmark/">Comments on the Julius Graph Engine Benchmark</a> 2022-05-01<br><p>Scheduling is a hard problem, but it's a necessary evil for modern civilization:
+- Moving perishable goods quickly from producer to consumer
+- Tracking and re-routing aircraft to prevent collisions while optimizing flight paths
+- Planning traffic light timings to avoid gridlock
+In the space of computing, we often have lots of different kinds of tasks we need to complete, but only a few computing resources to fulfill these tasks. There are plenty of naive ways to do scheduling, from round-robin to FIFO and LIFO, and these can work out well when your tasks and computing resources are homogeneous. But life is rarely so simple; tasks can be small or large and can have dependencies on each other, and computing resources aren't all alike (e.g. CPU vs. GPU). Using a naive scheduling algorithm for such problems is a recipe for sitting around, waiting for an analysis or computation to complete. Thankfully, there exist smarter schedulers, like Dask, Ray, and Dagger.jl, which are able to handle heterogeneous task scheduling effectively through resource queries, runtime metric collection, and other smart ideas.
+In this blog post, we'll introduce you to a benchmark of some of these schedulers, and walk you through how I optimized Dagger.jl's scheduler to more efficiently run the benchmark. I'll also introduce you to a new proprietary scheduler platform offered by a Julia-focused startup, and show how it stacks up against the open-source schedulers. I'll finally give some ideas for problems that these schedulers can solve effectively, which will help you understand how these schedulers can support your computational needs.
+</p>Philip1<img src="/juliaparallel-xr/assets/green-philip.png"/><img src="/juliaparallel-xr/assets/red-philip.png"/></div><div class="news-block" style="width:265px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world1/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip1<img src="/juliaparallel-xr/assets/green-philip.png"/><img src="/juliaparallel-xr/assets/red-philip.png"/></div><div class="news-block" style="width:271px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world10/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip2<img src="/juliaparallel-xr/assets/purple-philip.png"/><img src="/juliaparallel-xr/assets/green-philip.png"/></div><div class="news-block" style="width:256px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world11/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip1<img src="/juliaparallel-xr/assets/green-philip.png"/><img src="/juliaparallel-xr/assets/red-philip.png"/></div><div class="news-block" style="width:279px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world2/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip1<img src="/juliaparallel-xr/assets/green-philip.png"/><img src="/juliaparallel-xr/assets/red-philip.png"/></div><div class="news-block" style="width:253px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world3/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip2<img src="/juliaparallel-xr/assets/purple-philip.png"/><img src="/juliaparallel-xr/assets/green-philip.png"/></div><div class="news-block" style="width:290px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world4/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip2<img src="/juliaparallel-xr/assets/purple-philip.png"/><img src="/juliaparallel-xr/assets/green-philip.png"/></div><div class="news-block" style="width:273px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world5/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip1<img src="/juliaparallel-xr/assets/green-philip.png"/><img src="/juliaparallel-xr/assets/red-philip.png"/></div><div class="news-block" style="width:271px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world6/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip2<img src="/juliaparallel-xr/assets/purple-philip.png"/><img src="/juliaparallel-xr/assets/green-philip.png"/></div><div class="news-block" style="width:254px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world7/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip2<img src="/juliaparallel-xr/assets/purple-philip.png"/><img src="/juliaparallel-xr/assets/green-philip.png"/></div><div class="news-block" style="width:251px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world8/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip1<img src="/juliaparallel-xr/assets/green-philip.png"/><img src="/juliaparallel-xr/assets/red-philip.png"/></div><div class="news-block" style="width:258px;margin:-5px;"><a href="/juliaparallel-xr/news/2022/04/hello_world9/">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a> 2022-04-01<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>Philip1<img src="/juliaparallel-xr/assets/green-philip.png"/><img src="/juliaparallel-xr/assets/red-philip.png"/></div></div>
+  
+
+</div>
+
+
+      </div> 
+    </div>   
+
+    <div class="page__footer">
+      <footer>
+        
+        
+        <div class="page__footer-follow">
+          <ul class="social-icons">
+            <li><strong>Follow:</strong></li>
+            
+            <li><a href="https://github.com/JuliaParallel" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          </ul>
+        </div>
+        <div class="page__footer-copyright">&copy; "JuliaParallel". Powered by <a href="https://github.com/tlienart/Franklin.jl">Franklin</a>, <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>, and <a href="https://julia.mit.edu" rel="nofollow">Julia Lab</a>.</div>
+      </footer>
+    </div>
+
+    <script src="/juliaparallel-xr/libs/minimal-mistakes/main.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+
+    
+    
+  </body>
+</html>
